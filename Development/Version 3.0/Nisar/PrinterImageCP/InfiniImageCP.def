@@ -1,0 +1,9 @@
+LIBRARY TestDll
+DESCRIPTION This is my DLL file!
+
+EXPORTS
+    
+	SearchPrinter	@1
+	GetAPIVersion	@2
+	
+testFunction @3

@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[TBS Security Code.vbproj]
+SCC_Aux_Path = "\\netserver\SourceSafe Databases\BatchSystem"
+SCC_Project_Name = "$/BatchSystem/Development/Version 3.0/TBS Security Code", VIAAAAAA
+
+[TBS Security Code.sln]
+SCC_Aux_Path = "\\netserver\SourceSafe Databases\BatchSystem"
+SCC_Project_Name = "$/BatchSystem/Development/Version 3.0", FFAAAAAA

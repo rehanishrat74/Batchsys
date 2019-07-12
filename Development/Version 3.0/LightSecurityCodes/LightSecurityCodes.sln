@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "LightSecurityCodeSetup", "LightSecurityCodeSetup\LightSecurityCodeSetup.vdproj", "{5EF0577A-9CA2-4D91-804E-59CA91624C32}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Upload Codes", "TBS Upload Codes\TBS Upload Codes\Upload Codes.vbproj", "{456E748F-7C2D-4657-9A3A-B3D9B323F1F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EF0577A-9CA2-4D91-804E-59CA91624C32}.Debug|Any CPU.ActiveCfg = Debug
+		{5EF0577A-9CA2-4D91-804E-59CA91624C32}.Debug|Any CPU.Build.0 = Debug
+		{5EF0577A-9CA2-4D91-804E-59CA91624C32}.Release|Any CPU.ActiveCfg = Release
+		{5EF0577A-9CA2-4D91-804E-59CA91624C32}.Release|Any CPU.Build.0 = Release
+		{456E748F-7C2D-4657-9A3A-B3D9B323F1F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{456E748F-7C2D-4657-9A3A-B3D9B323F1F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{456E748F-7C2D-4657-9A3A-B3D9B323F1F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{456E748F-7C2D-4657-9A3A-B3D9B323F1F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

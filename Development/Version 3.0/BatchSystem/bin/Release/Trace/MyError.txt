@@ -1,0 +1,63 @@
+Error from .Net : , 04/07/2008 12:00:56 , Conversion from string "" to type 'Integer' is not valid.
+and source is :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at BatchSystem.frmReportCriteria.btnReport_Click(Object sender, EventArgs e) in D:\Projects\BatchSystem\BatchSystem\frmReportCriteria.vb:line 194
+Error from .Net : LognForm , 20/03/2014 20:14:38 , The 'Microsoft.Jet.OLEDB.4.0' provider is not registered on the local machine.
+and source is :    at System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at BatchSystem.Common.ExecuteQuery(String cmdText, Execute type) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\Common.vb:line 84
+   at BatchSystem.frmLogin.Button1_Click_1(Object sender, EventArgs e) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\frmLogin.vb:line 98
+Error from .Net : LognForm , 20/03/2014 20:17:20 , The 'Microsoft.Jet.OLEDB.4.0' provider is not registered on the local machine.
+and source is :    at System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at BatchSystem.Common.ExecuteQuery(String cmdText, Execute type) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\Common.vb:line 84
+   at BatchSystem.frmLogin.Button1_Click_1(Object sender, EventArgs e) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\frmLogin.vb:line 98
+Error from .Net : LognForm , 20/03/2014 20:17:37 , The 'Microsoft.Jet.OLEDB.4.0' provider is not registered on the local machine.
+and source is :    at System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at BatchSystem.Common.ExecuteQuery(String cmdText, Execute type) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\Common.vb:line 84
+   at BatchSystem.frmLogin.Button1_Click_1(Object sender, EventArgs e) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\frmLogin.vb:line 98
+Error from .Net : LognForm , 20/03/2014 20:19:38 , The 'Microsoft.Jet.OLEDB.4.0' provider is not registered on the local machine.
+and source is :    at System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at BatchSystem.Common.ExecuteQuery(String cmdText, Execute type) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\Common.vb:line 84
+   at BatchSystem.frmLogin.Button1_Click_1(Object sender, EventArgs e) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\frmLogin.vb:line 98
+Error from .Net : LognForm , 20/03/2014 20:21:19 , The 'Microsoft.Jet.OLEDB.4.0' provider is not registered on the local machine.
+and source is :    at System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at BatchSystem.Common.ExecuteQuery(String cmdText, Execute type) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\Common.vb:line 84
+   at BatchSystem.frmLogin.Button1_Click_1(Object sender, EventArgs e) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\frmLogin.vb:line 98
+Error from .Net : LognForm , 20/03/2014 20:23:36 , The 'Microsoft.Jet.OLEDB.4.0' provider is not registered on the local machine.
+and source is :    at System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at BatchSystem.Common.ExecuteQuery(String cmdText, Execute type) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\Common.vb:line 84
+   at BatchSystem.frmLogin.Button1_Click_1(Object sender, EventArgs e) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\frmLogin.vb:line 98

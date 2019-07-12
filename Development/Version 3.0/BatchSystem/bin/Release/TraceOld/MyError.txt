@@ -1,0 +1,1 @@
+Error from .VB : , 21/04/2008 16:10:37 , Error opening port

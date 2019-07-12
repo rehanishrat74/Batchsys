@@ -1,0 +1,2 @@
+Error from .VB : , 14/04/2008 19:46:07 , Error invalid arguements
+Error from .VB : , 14/04/2008 19:46:45 , Error opening port

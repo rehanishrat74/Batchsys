@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TBS Security Code", "TBS Security Code.vbproj", "{0466692D-C926-458F-A67B-22D22C9E35EA}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "..\Setup\Setup.vdproj", "{75B6860F-E91B-4896-8AE6-6AA3B5DF0A50}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = TBS\u0020Security\u0020Code.vbproj
+		SccProjectName0 = \u0022$/BatchSystem/Development/Version\u00203.0/TBS\u0020Security\u0020Code\u0022,\u0020VIAAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0466692D-C926-458F-A67B-22D22C9E35EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0466692D-C926-458F-A67B-22D22C9E35EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0466692D-C926-458F-A67B-22D22C9E35EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0466692D-C926-458F-A67B-22D22C9E35EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75B6860F-E91B-4896-8AE6-6AA3B5DF0A50}.Debug|Any CPU.ActiveCfg = Debug
+		{75B6860F-E91B-4896-8AE6-6AA3B5DF0A50}.Debug|Any CPU.Build.0 = Debug
+		{75B6860F-E91B-4896-8AE6-6AA3B5DF0A50}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

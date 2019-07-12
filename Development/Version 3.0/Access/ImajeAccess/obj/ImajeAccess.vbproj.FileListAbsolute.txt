@@ -1,0 +1,10 @@
+D:\Projects\Batch System\Development\Version 3.0\Access\ImajeAccess\bin\Release\ImajeAccess.dll
+D:\Projects\Batch System\Development\Version 3.0\Access\ImajeAccess\bin\Release\ImajeAccess.pdb
+D:\Projects\Batch System\Development\Version 3.0\Access\ImajeAccess\bin\Release\ImajeAccess.xml
+D:\Projects\Batch System\Development\Version 3.0\Access\ImajeAccess\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\Batch System\Development\Version 3.0\Access\ImajeAccess\obj\Release\ImajeAccess.Resources.resources
+D:\Projects\Batch System\Development\Version 3.0\Access\ImajeAccess\obj\Release\ImajeAccess.vbproj.GenerateResource.Cache
+D:\Projects\Batch System\Development\Version 3.0\Access\ImajeAccess\obj\Release\ImajeAccess.dll
+D:\Projects\Batch System\Development\Version 3.0\Access\ImajeAccess\obj\Release\ImajeAccess.xml
+D:\Projects\Batch System\Development\Version 3.0\Access\ImajeAccess\obj\Release\ImajeAccess.pdb
+D:\Projects\Batch System\Development\Version 3.0\Access\ImajeAccess\bin\Release\ImajeAccess.tlb

@@ -1,0 +1,184 @@
+D:\Projects\BatchSystem\BatchSystem\bin\Release\BatchSystem.exe.config
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.exe
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.xml
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.pdb
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.XmlSerializers.dll
+D:\Projects\BatchSystem\BatchSystem\bin\Release\BatchSystem.mdb
+D:\Projects\BatchSystem\BatchSystem\bin\Release\Serials.txt
+D:\Projects\BatchSystem\BatchSystem\bin\Release\TBS.ico
+D:\Projects\BatchSystem\BatchSystem\bin\Release\TBS_small3.ico
+D:\Projects\BatchSystem\BatchSystem\bin\Release\BatchSystem.exe
+D:\Projects\BatchSystem\BatchSystem\bin\Release\BatchSystem.XmlSerializers.dll
+D:\Projects\BatchSystem\BatchSystem\bin\Release\BatchSystem.pdb
+D:\Projects\BatchSystem\BatchSystem\bin\Release\BatchSystem.xml
+D:\Projects\BatchSystem\BatchSystem\bin\Release\Interop.InfiniImageVB.dll
+D:\Projects\BatchSystem\BatchSystem\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\BatchSystem\BatchSystem\obj\Release\Interop.InfiniImageVB.dll
+D:\Projects\BatchSystem\BatchSystem\obj\Release\TBS Security Code.vbproj.ResolveComReference.cache
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.rptBatch.rpt
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.bk_rptBatch.rpt
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.bkSerials.rpt
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.rptSerial.rpt
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.frmCodesShow.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.frmLogin.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.frmMain.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.frmPrintCodes.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.frmPrinterConfigration.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.frmPrinterStatus.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.frmProduct.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.frmRegion.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.frmReportCriteria.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.frmSearch.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.frmSerials.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.frmSerials1.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.frmSetPort.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.frmStartStopMachine.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.frmTest.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.frmUsers.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.frmViewReport.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Release\BatchSystem.Resources.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Release\TBS Security Code.vbproj.GenerateResource.Cache
+D:\Projects\BatchSystem\BatchSystem\bin\Debug\BatchSystem.exe.config
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.exe
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.xml
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.pdb
+D:\Projects\BatchSystem\BatchSystem\bin\Debug\BatchSystem.mdb
+D:\Projects\BatchSystem\BatchSystem\bin\Debug\Serials.txt
+D:\Projects\BatchSystem\BatchSystem\bin\Debug\TBS.ico
+D:\Projects\BatchSystem\BatchSystem\bin\Debug\TBS_small3.ico
+D:\Projects\BatchSystem\BatchSystem\bin\Debug\BatchSystem.exe
+D:\Projects\BatchSystem\BatchSystem\bin\Debug\BatchSystem.pdb
+D:\Projects\BatchSystem\BatchSystem\bin\Debug\BatchSystem.xml
+D:\Projects\BatchSystem\BatchSystem\bin\Debug\Interop.InfiniImageVB.dll
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\Interop.InfiniImageVB.dll
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\TBS Security Code.vbproj.ResolveComReference.cache
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.rptBatch.rpt
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.bk_rptBatch.rpt
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.bkSerials.rpt
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.rptSerial.rpt
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.frmCodesShow.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.frmLogin.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.frmMain.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.frmPrintCodes.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.frmPrinterConfigration.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.frmPrinterStatus.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.frmProduct.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.frmRegion.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.frmReportCriteria.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.frmSearch.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.frmSerials.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.frmSerials1.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.frmSetPort.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.frmStartStopMachine.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.frmTest.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.frmUsers.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.frmViewReport.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\BatchSystem.Resources.resources
+D:\Projects\BatchSystem\BatchSystem\obj\Debug\TBS Security Code.vbproj.GenerateResource.Cache
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Release\BatchSystem.exe.config
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.exe
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.xml
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.pdb
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.XmlSerializers.dll
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Release\BatchSystem.mdb
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Release\Serials.txt
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Release\TBS.ico
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Release\TBS_small3.ico
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Release\BatchSystem.exe
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Release\BatchSystem.XmlSerializers.dll
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Release\BatchSystem.pdb
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Release\BatchSystem.xml
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Release\Interop.InfiniImageVB.dll
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\Interop.InfiniImageVB.dll
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\TBS Security Code.vbproj.ResolveComReference.cache
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.rptBatch.rpt
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.bk_rptBatch.rpt
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.bkSerials.rpt
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.rptSerial.rpt
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmCodesShow.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmLogin.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmMain.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmPrintCodes.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmPrinterConfigration.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmPrinterStatus.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmProduct.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmRegion.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmReportCriteria.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmSearch.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmSerials.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmSerials1.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmSetPort.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmStartStopMachine.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmTest.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmUsers.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmViewReport.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.Resources.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Release\TBS Security Code.vbproj.GenerateResource.Cache
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Debug\BatchSystem.exe.config
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.exe
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.xml
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.pdb
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Debug\BatchSystem.mdb
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Debug\Serials.txt
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Debug\TBS.ico
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Debug\TBS_small3.ico
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Debug\BatchSystem.exe
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\Interop.InfiniImageVB.dll
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\TBS Security Code.vbproj.ResolveComReference.cache
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.rptBatch.rpt
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.bk_rptBatch.rpt
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.bkSerials.rpt
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.rptSerial.rpt
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.frmCodesShow.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.frmLogin.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.frmMain.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.frmPrintCodes.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.frmProduct.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.frmRegion.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.frmReportCriteria.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.frmSearch.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.frmSerials1.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.frmSetPort.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.frmUsers.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.frmViewReport.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\BatchSystem.Resources.resources
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\obj\Debug\TBS Security Code.vbproj.GenerateResource.Cache
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Debug\BatchSystem.pdb
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Debug\BatchSystem.xml
+D:\Projects\Batch System\Development\Version 3.0\BatchSystem\bin\Debug\Interop.InfiniImageVB.dll
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\bin\Release\BatchSystem.exe.config
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.exe
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.xml
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.pdb
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.XmlSerializers.dll
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.rptBatch.rpt
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.bk_rptBatch.rpt
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.bkSerials.rpt
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.rptSerial.rpt
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmCodesShow.resources
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmLogin.resources
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmMain.resources
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmPrintCodes.resources
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmProduct.resources
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmRegion.resources
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmReportCriteria.resources
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmSearch.resources
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmSerials1.resources
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmSetPort.resources
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmUsers.resources
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.frmViewReport.resources
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\BatchSystem.Resources.resources
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\obj\Release\TBS Security Code.vbproj.GenerateResource.Cache
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\bin\Release\BatchSystem.mdb
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\bin\Release\Serials.txt
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\bin\Release\TBS.ico
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\bin\Release\TBS_small3.ico
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\bin\Release\BatchSystem.exe
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\bin\Release\BatchSystem.XmlSerializers.dll
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\bin\Release\BatchSystem.pdb
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\bin\Release\BatchSystem.xml
+D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\bin\Release\Interop.InfiniImageVB.dll

@@ -1,0 +1,38 @@
+Login in the application
+.Net : btnSearch_Click : Search button click on Port Seting Form 
+.Net : btnSearch_Click : Calling the AutoSearchPrinter2() function of .net 
+.Net : AutoSearchPrinter2() : enter in the AutoSearchPrinter2() funcion 
+.Net : AutoSearchPrinter2() : Creating the InfiniImage.PrinterImaje obj 
+.Net : AutoSearchPrinter2() :Obj is created
+.Net : AutoSearchPrinter2() :Calling the function AutoDetectPrinter(Application.StartupPath()) of InfiniImage.dll
+"VB 6.0  : Function : AutoDetectPrinter(D:\Projects\BatchSystem\BatchSystem\bin\Release), come in function of InfiniImage.PrinterImaje"
+"VB 6.0  : Function : AutoDetectPrinter(D:\Projects\BatchSystem\BatchSystem\bin\Release), calling the function MyDLLFunc1() of InfiniImaji2.dll "
+
+VC++ 6.0 : Function MyDLLFunc1 : Enter in MyDLLFunc1() of InfiniImaji2.dll 
+VC++ 6.0 : Function MyDLLFunc1 : Loading the  IMASCP.dll
+VC++ 6.0 : Function MyDLLFunc1 : Loading complete of  IMASCP.dll
+VC++ 6.0 : Function MyDLLFunc1 : Chencking the IMASCP.dll us loaded or not
+VC++ 6.0 : Function MyDLLFunc1 : The IMASCP.dll us loaded sucefully
+VC++ 6.0 : Function MyDLLFunc1 : Reference and get the process adress of the function IJ_AutoSearchPrinter from loaded dll means IMASCP.dll
+VC++ 6.0 : Function MyDLLFunc1 : Checking reference and Process adress of the function IJ_AutoSearchPrinter from loaded dll means IMASCP.dll
+VC++ 6.0 : Function MyDLLFunc1 : reference and Process adress of the function IJ_AutoSearchPrinter from loaded dll means IMASCP.dll is found
+VC++ 6.0 : Function MyDLLFunc1 : Delare AUTODETECTINFO AutoDetect for Function IJ_AutoSearchPrinter()
+VC++ 6.0 : Function MyDLLFunc1 : Calling Function IJ_AutoSearchPrinter() of IMASCP.dll
+VC++ 6.0 : Function MyDLLFunc1 : Calling complete and return from Function IJ_AutoSearchPrinter() of IMASCP.dll
+VC++ 6.0 : Function MyDLLFunc1 : The return value is :-436207616 IJ_AutoSearchPrinter() of IMASCP.dll
+VC++ 6.0 : Function MyDLLFunc1 : Checking the return value
+VC++ 6.0 : Function MyDLLFunc1 : the return value is not grather then 0
+VC++ 6.0 : The process of function MyDLLFunc1 of InfiniImage2 is completed and return the value
+ "VB 6.0  : Function : AutoDetectPrinter(D:\Projects\BatchSystem\BatchSystem\bin\Release), retrun back in AutoDetectPrinter function from MyDLLFunc1() of InfiniImaji2.dll"
+"VB 6.0  : Function : AutoDetectPrinter(D:\Projects\BatchSystem\BatchSystem\bin\Release), retrun value is : 0"
+"VB 6.0  : Function : AutoDetectPrinter(D:\Projects\BatchSystem\BatchSystem\bin\Release), The work of AutoDetectPrinter() is complete and return the 0 as a string "
+.Net : AutoSearchPrinter2() : out from  the function AutoDetectPrinter(Application.StartupPath()) of InfiniImage.dll
+.Net : AutoSearchPrinter2() : Return the result from function AutoDetectPrinter(Application.StartupPath()) of InfiniImage.dll is : 0
+.Net : AutoSearchPrinter2() : convert the result into interger value
+.Net : AutoSearchPrinter2() : conversion is completed
+.Net : AutoSearchPrinter2() :Check the value which is retruned
+.Net : AutoSearchPrinter2() :The returned value not grater then 0
+.Net : AutoSearchPrinter2() : Remove all row of datagird which exit already
+.Net : AutoSearchPrinter2() : All working is completed of function AutoSearchPrinter2()
+.Net : btnSearch_Click : out from AutoSearchPrinter2() function of .net 
+.Net : btnSearch_Click : The work is completed of Buton Search 

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TBSUploadCodes
+</name>
+</assembly>
+<members>
+<member name="P:TBS_Upload_Codes.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:TBS_Upload_Codes.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:TBS_Upload_Codes.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:TBS_Upload_Codes.com.infinishops.tbs.Service1.#ctor">
+	<remarks/>
+</member><member name="E:TBS_Upload_Codes.com.infinishops.tbs.Service1.UploadDataFromAppCompleted">
+	<remarks/>
+</member><member name="E:TBS_Upload_Codes.com.infinishops.tbs.Service1.UploadCodesCompleted">
+	<remarks/>
+</member><member name="M:TBS_Upload_Codes.com.infinishops.tbs.Service1.UploadDataFromApp(System.String)">
+	<remarks/>
+</member><member name="M:TBS_Upload_Codes.com.infinishops.tbs.Service1.UploadDataFromAppAsync(System.String)">
+	<remarks/>
+</member><member name="M:TBS_Upload_Codes.com.infinishops.tbs.Service1.UploadDataFromAppAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:TBS_Upload_Codes.com.infinishops.tbs.Service1.UploadCodes(System.String)">
+	<remarks/>
+</member><member name="M:TBS_Upload_Codes.com.infinishops.tbs.Service1.UploadCodesAsync(System.String)">
+	<remarks/>
+</member><member name="M:TBS_Upload_Codes.com.infinishops.tbs.Service1.UploadCodesAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:TBS_Upload_Codes.com.infinishops.tbs.Service1.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:TBS_Upload_Codes.com.infinishops.tbs.Service1">
+	<remarks/>
+</member><member name="T:TBS_Upload_Codes.com.infinishops.tbs.UploadDataFromAppCompletedEventHandler">
+	<remarks/>
+</member><member name="P:TBS_Upload_Codes.com.infinishops.tbs.UploadDataFromAppCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:TBS_Upload_Codes.com.infinishops.tbs.UploadDataFromAppCompletedEventArgs">
+	<remarks/>
+</member><member name="T:TBS_Upload_Codes.com.infinishops.tbs.UploadCodesCompletedEventHandler">
+	<remarks/>
+</member><member name="P:TBS_Upload_Codes.com.infinishops.tbs.UploadCodesCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:TBS_Upload_Codes.com.infinishops.tbs.UploadCodesCompletedEventArgs">
+	<remarks/>
+</member>
+</members>
+</doc>

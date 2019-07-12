@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "tbs.infinishops.com", "http://Localhost:/tbs.infinishops.com.vbproj", "{50CC0795-B497-493B-87DE-B92B6955468C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{50CC0795-B497-493B-87DE-B92B6955468C}.Debug.ActiveCfg = Debug|.NET
+		{50CC0795-B497-493B-87DE-B92B6955468C}.Debug.Build.0 = Debug|.NET
+		{50CC0795-B497-493B-87DE-B92B6955468C}.Release.ActiveCfg = Release|.NET
+		{50CC0795-B497-493B-87DE-B92B6955468C}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

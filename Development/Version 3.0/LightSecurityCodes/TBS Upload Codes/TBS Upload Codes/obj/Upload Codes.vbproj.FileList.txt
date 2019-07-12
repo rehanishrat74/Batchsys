@@ -1,0 +1,24 @@
+bin\Release\TBS Upload Codes.exe.config
+bin\Release\TBS Upload Codes.exe
+bin\Release\TBS Upload Codes.XmlSerializers.dll
+bin\Release\TBS Upload Codes.pdb
+bin\Release\TBS Upload Codes.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\TBS_Upload_Codes.Resources.resources
+obj\Release\Upload Codes.vbproj.GenerateResource.Cache
+obj\Release\TBS Upload Codes.exe
+obj\Release\TBS Upload Codes.xml
+obj\Release\TBS Upload Codes.pdb
+obj\Release\TBS Upload Codes.XmlSerializers.dll
+obj\Release\TBS_Upload_Codes.frmLightSecurityCode.resources
+bin\Debug\TBS Upload Codes.exe.config
+obj\Debug\TBS Upload Codes.exe
+obj\Debug\TBS Upload Codes.xml
+obj\Debug\TBS Upload Codes.pdb
+bin\Debug\TBS Upload Codes.exe
+bin\Debug\TBS Upload Codes.pdb
+bin\Debug\TBS Upload Codes.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\TBS_Upload_Codes.frmLightSecurityCode.resources
+obj\Debug\TBS_Upload_Codes.Resources.resources
+obj\Debug\Upload Codes.vbproj.GenerateResource.Cache

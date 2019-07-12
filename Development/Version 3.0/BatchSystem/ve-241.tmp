@@ -1,0 +1,438 @@
+Imports System.Data.OleDb
+Imports System.Net
+Imports System.Text
+Imports System.Windows.Forms
+Imports System.Text.RegularExpressions
+Imports System.Threading
+Imports System.IO
+Imports System.Data
+Imports System.Data.SqlClient
+Imports BatchSystem.Common
+Imports System.Collections.Generic
+Public Class frmSerials1
+
+    Private isDuplicateBatch As Int32 = 0
+    Private isNumber As Boolean = False
+    Private Sub SetControls(ByVal isEnabled As Boolean)
+        Me.cmbProduct.Enabled = isEnabled
+        Me.txtBatchSize.Enabled = isEnabled
+        'Me.btnReport.Enabled = isEnabled
+        Me.btnUploadSerial.Enabled = isEnabled
+        'Me.rdoBatch.Enabled = isEnabled
+        'Me.rdoBatch2.Enabled = isEnabled
+        'Me.dtFrom.Enabled = isEnabled
+        'Me.dtTo.Enabled = isEnabled
+        Me.btnSerials.Enabled = isEnabled
+        'MenuStrip1.Enabled = isEnabled
+        Dim f As frmMain = CType(Me.MdiParent, frmMain)
+        f.MenuStrip1.Enabled = isEnabled
+        'Form1 f = (Form1)this.MDIParent;
+        'f.toolStripButton1.Enabled = false;
+
+    End Sub
+    Private Sub frmBatch_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'Try
+        '    Dim ico As New System.Drawing.Icon(Application.StartupPath & "\TBS_small3.ico")
+        '    Me.Icon = ico
+        'Catch ex As Exception
+
+        'End Try
+        Me.Icon = Nothing
+        'Me.btnBatch.Visible = False
+        grbSerials.Visible = True
+        'grbProducts.Visible = False
+        SetCombos()
+        SetComboRegions()
+        'SetProductCombo()
+    End Sub
+    Private Sub SetComboRegions()
+        Dim dtRegions As DataTable
+        dtRegions = Common.GetRegions()
+        With Me.cmbRegions
+            .Text = String.Empty
+            .DisplayMember = "RegionCode"
+            .ValueMember = "ID"
+            .DataSource = dtRegions
+            .Refresh()
+        End With
+    End Sub
+    Private Sub SetCombos()
+        SetProductCombo()
+        If cmbProduct.Items.Count > 0 Then
+            cmbProduct.SelectedIndex = 0
+            Dim ProductCode As String = cmbProduct.SelectedValue
+            SetPacketsCombo(ProductCode)
+        End If
+    End Sub
+    Private Sub SetProductCombo()
+        Dim dtProducts As DataTable
+        dtProducts = Common.GetProducts()
+        With Me.cmbProduct
+            .Text = String.Empty
+            .DisplayMember = "ProductName"
+            .ValueMember = "ProductCode"
+            .DataSource = dtProducts
+
+            .Refresh()
+        End With
+    End Sub
+    Private Sub SetPacketsCombo(ByVal ProductCode As String)
+        Dim dtPackets As DataTable
+        dtPackets = Common.GetPackets(ProductCode)
+        With Me.cmbPacket
+            .Text = String.Empty
+            .DisplayMember = "PacketSize"
+            .ValueMember = "ProductCode"
+            .DataSource = dtPackets
+            .Refresh()
+        End With
+    End Sub
+    Private Function GenrateSerial5(ByRef random As System.Random, ByVal productID As String, ByVal packetSize As Integer, ByVal Region As String) As Boolean
+        Dim bReturn As Boolean = False
+        Try
+            'check data with data base from unique key constrain
+            Dim bContinue As Boolean = True
+            Dim builder As StringBuilder
+            Dim sno As String = String.Empty
+            Dim rNumber As Int32
+            Dim serial As String = String.Empty
+            Dim duplicate As Integer = 0
+            Dim i As Integer = 0
+
+            Dim bDuplicate As Boolean = False
+            'Dim path As String = Application.StartupPath() & "\SecurityCode.txt"
+
+            'If File.Exists(path) = False Then
+            '    Dim sw As StreamWriter = File.CreateText(path)
+            '    sw.Flush()
+            '    sw.Close()
+            'End If
+
+            'Dim sr As StreamReader = File.OpenText(path)
+            'Dim myText As String
+            'myText = sr.ReadToEnd()
+            'sr.Close()
+
+            'Dim fs As New FileStream(path, FileMode.Open, FileAccess.Write)
+            'Dim fs As New FileStream(path, FileMode.Create, FileAccess.Write)
+            'declaring a FileStream and creating a document file named file with 
+            'access mode of writing
+            'Dim s As New StreamWriter(fs)
+
+            's.Write(myText)
+            Dim objRegex As New Regex("^[a-zA-Z0-9]{10}$")
+            For i = 1 To 25
+                bReturn = False
+                serial = String.Empty
+                builder = New StringBuilder
+                Dim alphLength As Int64 = random.Next(1, 9)
+                For index As Int32 = 1 To alphLength
+                    rNumber = random.Next(0, 49) + random.Next(0, 50)
+                    If rNumber < 65 Then
+                        rNumber = random.Next(65, 90)
+                    ElseIf rNumber > 90 Then
+                        rNumber = random.Next(97, 122)
+                    End If
+                    serial += Microsoft.VisualBasic.ChrW(rNumber)
+                Next
+                sno = serial + Convert.ToString(random.Next(GetSeedMinMax(10 - alphLength).Item(0), GetSeedMinMax(10 - alphLength).Item(1)))
+                If objRegex.IsMatch(sno) Then
+                    bDuplicate = InsertSerialNo(sno.ToUpper(), productID, packetSize, Region)
+                    If bDuplicate = True Then
+                        Dim arrChar() As Char = sno.ToCharArray()
+                        Array.Reverse(arrChar)
+                        sno = arrChar.ToString()
+                        bDuplicate = InsertSerialNo(sno.ToUpper(), productID, packetSize, Region)
+                    End If
+                    If bDuplicate = True Then
+                        sno = System.String.Empty
+                    Else
+                        's.WriteLine(sno)
+                        counter += 1
+                        'Me.ProgressBar1.Increment(counter)
+                        Me.ProgressBar1.PerformStep()
+                        bReturn = True
+                        Exit For
+                    End If
+                End If
+            Next
+            's.Close()
+
+        Catch ex As System.Data.OleDb.OleDbException
+            'If (ex.ErrorCode = -2147467259) Then
+            '    sno = System.String.Empty
+            'End If
+            's.Close()
+        End Try
+        Return bReturn
+    End Function
+    Private Function GenrateSerial5(ByRef random As System.Random, ByVal productID As String, ByVal packetSize As Integer) As Boolean
+        Dim bReturn As Boolean = False
+        Try
+            'check data with data base from unique key constrain
+            Dim bContinue As Boolean = True
+            Dim builder As StringBuilder
+            Dim sno As String = String.Empty
+            Dim rNumber As Int32
+            Dim serial As String = String.Empty
+            Dim duplicate As Integer = 0
+            Dim i As Integer = 0
+
+            Dim bDuplicate As Boolean = False
+            Dim path As String = Application.StartupPath() & "\SecurityCode.txt"
+
+            If File.Exists(path) = False Then
+                Dim sw As StreamWriter = File.CreateText(path)
+                sw.Flush()
+                sw.Close()
+            End If
+
+            Dim sr As StreamReader = File.OpenText(path)
+            Dim myText As String
+            myText = sr.ReadToEnd()
+            sr.Close()
+
+            Dim fs As New FileStream(path, FileMode.Open, FileAccess.Write)
+            'Dim fs As New FileStream(path, FileMode.Create, FileAccess.Write)
+            'declaring a FileStream and creating a document file named file with 
+            'access mode of writing
+            Dim s As New StreamWriter(fs)
+
+            s.Write(myText)
+            Dim objRegex As New Regex("^[a-zA-Z0-9]{10}$")
+            For i = 1 To 25
+                bReturn = False
+                serial = String.Empty
+                builder = New StringBuilder
+                Dim alphLength As Int64 = random.Next(1, 9)
+                For index As Int32 = 1 To alphLength
+                    rNumber = random.Next(0, 49) + random.Next(0, 50)
+                    If rNumber < 65 Then
+                        rNumber = random.Next(65, 90)
+                    ElseIf rNumber > 90 Then
+                        rNumber = random.Next(97, 122)
+                    End If
+                    serial += Microsoft.VisualBasic.ChrW(rNumber)
+                Next
+                sno = serial + Convert.ToString(random.Next(GetSeedMinMax(10 - alphLength).Item(0), GetSeedMinMax(10 - alphLength).Item(1)))
+                If objRegex.IsMatch(sno) Then
+                    bDuplicate = InsertSerialNo(sno.ToUpper(), productID, packetSize)
+                    If bDuplicate = True Then
+                        Dim arrChar() As Char = sno.ToCharArray()
+                        Array.Reverse(arrChar)
+                        sno = arrChar.ToString()
+                        bDuplicate = InsertSerialNo(sno.ToUpper(), productID, packetSize)
+                    End If
+                    If bDuplicate = True Then
+                        sno = System.String.Empty
+                    Else
+                        s.WriteLine(sno)
+                        counter += 1
+                        'Me.ProgressBar1.Increment(counter)
+                        Me.ProgressBar1.PerformStep()
+                        bReturn = True
+                        Exit For
+                    End If
+                End If
+            Next
+            s.Close()
+
+        Catch ex As System.Data.OleDb.OleDbException
+            'If (ex.ErrorCode = -2147467259) Then
+            '    sno = System.String.Empty
+            'End If
+            's.Close()
+        End Try
+        Return bReturn
+    End Function
+    Private Function GenrateSerial4(ByRef random As System.Random, ByVal productID As String) As Boolean
+        'check data with data base from unique key constrain
+        Dim bContinue As Boolean = True
+        Dim builder As StringBuilder
+        Dim sno As String = String.Empty
+        Dim rNumber As Int32
+        Dim serial As String = String.Empty
+        Dim duplicate As Integer = 0
+        Dim i As Integer = 0
+        Dim bReturn As Boolean = False
+        Dim bDuplicate As Boolean = False
+        Try
+            Dim objRegex As New Regex("^[a-zA-Z0-9]{10}$")
+            For i = 1 To 25
+                bReturn = False
+                serial = String.Empty
+                builder = New StringBuilder
+                Dim alphLength As Int64 = random.Next(1, 9)
+                For index As Int32 = 1 To alphLength
+                    rNumber = random.Next(0, 49) + random.Next(0, 50)
+                    If rNumber < 65 Then
+                        rNumber = random.Next(65, 90)
+                    ElseIf rNumber > 90 Then
+                        rNumber = random.Next(97, 122)
+                    End If
+                    serial += Microsoft.VisualBasic.ChrW(rNumber)
+                Next
+                sno = serial + Convert.ToString(random.Next(GetSeedMinMax(10 - alphLength).Item(0), GetSeedMinMax(10 - alphLength).Item(1)))
+                If objRegex.IsMatch(sno) Then
+                    bDuplicate = InsertSerialNo(sno, productID)
+                    If bDuplicate = True Then
+                        Dim arrChar() As Char = sno.ToCharArray()
+                        Array.Reverse(arrChar)
+                        sno = arrChar.ToString()
+                        bDuplicate = InsertSerialNo(sno, productID)
+                    End If
+                    If bDuplicate = True Then
+                        sno = System.String.Empty
+                    Else
+                        counter += 1
+                        'Me.ProgressBar1.Increment(counter)
+                        Me.ProgressBar1.PerformStep()
+                        bReturn = True
+                        Exit For
+                    End If
+                End If
+            Next
+
+        Catch ex As System.Data.OleDb.OleDbException
+            'If (ex.ErrorCode = -2147467259) Then
+            '    sno = System.String.Empty
+            'End If
+        End Try
+        Return bReturn
+    End Function
+    Private Sub RemoveItems(ByRef ct As ComboBox)
+        'For Each item As Object In ct.Items
+
+        'Next
+    End Sub
+    Private Sub Serials_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+        Dim arrSerIds() As String = Common.GetCSFString.Split("~~")
+        If Common.UpLoadSerials(arrSerIds(0)) Then
+
+            'Common.UpdateSerialsStatus(Me.cmbBatchNo.SelectedValue)
+            Common.UpdateSerialsStatus(arrSerIds(2), True)
+            'SetBatchCombo()
+
+            MessageBox.Show("Uploaded Successfully...", "TBS Security Code", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+            MessageBox.Show("Uploaded Failed...", "TBS Security Code", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+
+    End Sub
+    
+    
+    Private Sub txtBatchSize_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs)
+        If (e.KeyValue > 47 And e.KeyValue < 58) Or (e.KeyValue > 95 And e.KeyValue < 106) Or e.KeyValue = 8 Then
+            Me.isNumber = True
+        End If
+    End Sub
+    Private Sub txtBatchSize_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs)
+        If Not Me.isNumber Then
+            Me.txtBatchSize.Text = 0
+        End If
+        Me.isNumber = False
+    End Sub
+
+        Private Sub btnSerials_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSerials.Click
+
+        Try
+            If Me.cmbProduct.SelectedValue <> Nothing Then
+                If cmbPacket.Text.Length > 0 AndAlso IsNumeric(cmbPacket.Text) AndAlso cmbPacket.Text <> 0 Then
+                    If cmbRegions.SelectedValue <> Nothing Then
+                    
+                        If txtBatchSize.Text.Length > 0 AndAlso IsNumeric(txtBatchSize.Text) AndAlso txtBatchSize.Text > 0 Then
+                            Me.SetControls(False)
+                            batchSize = IIf(IsNumeric(txtBatchSize.Text), txtBatchSize.Text, 0)
+                            'batchSize = IIf(IsNumeric(cmbPacket.Text), cmbPacket.Text, 0)
+                            counter = 0
+                            Me.ProgressBar1.Minimum = 1
+                            Me.ProgressBar1.Maximum = batchSize
+                            Me.ProgressBar1.Step = 1
+                            Dim i As Integer = 0
+                            Dim Random As System.Random
+                            Dim bInsertCheck As Boolean
+                            Random = New System.Random(Date.Now.Month + Date.Now.Day + Date.Now.Hour + Date.Now.Minute + Date.Now.Second + Date.Now.Millisecond)
+                            For i = 1 To batchSize
+                                bInsertCheck = Me.GenrateSerial5(Random, cmbProduct.SelectedValue, cmbPacket.Text)
+                                If bInsertCheck = False Then
+                                    i = i - 1
+                                    Random = New System.Random(Date.Now.Month + Date.Now.Day + Date.Now.Hour + Date.Now.Minute + Date.Now.Second + Date.Now.Millisecond)
+                                End If
+                            Next
+                            Me.SetControls(True)
+                            MessageBox.Show("Security Code Generated", "TBS Security Code", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                            txtTotalSerials.Text = txtTotalSerials.Text + batchSize
+                            Me.ProgressBar1.Refresh()
+                            Me.ProgressBar1.Maximum = 0
+                            'SetBatchCombo()
+                        Else
+                            MessageBox.Show("Please Enter Batch size correct...", "TBS Security Code", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        End If
+                    Else
+                        MessageBox.Show("Please Select Region  ...", "TBS Security Code", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    End If
+                Else
+                    MessageBox.Show("Please Select Packet  Size...", "TBS Security Code", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                End If
+            Else
+                MessageBox.Show("Please Select Product ...", "TBS Security Code", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    Private Sub btnUploadSerial_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUploadSerial.Click
+        Try
+
+
+            Dim arrSerIds() As String = Common.GetCSFString.Split("~~")
+            Dim sResult As String = System.String.Empty
+            sResult = Common.UpLoadSecurityCodes(arrSerIds(0))
+            Select Case sResult
+                Case "success"
+                    Common.UpdateSerialsStatus(arrSerIds(2), True)
+                    MessageBox.Show("Uploaded Successfully...", "TBS Security Code", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Case "failed"
+                    MessageBox.Show("Uploaded Failed...", "TBS Security Code", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Case "duplicate record"
+                    MessageBox.Show("Duplicate Codes not allow to upload", "TBS Security Code", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Select
+        Catch ex As Exception
+            MessageBox.Show(ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+    
+
+    Private Sub cmbProduct_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbProduct.SelectedIndexChanged
+        If Me.cmbProduct.SelectedValue <> Nothing Then
+            Dim sProCode As String = cmbProduct.SelectedValue
+            SetPacketsCombo(sProCode)
+            Dim iTotalSerials As Integer = GetTotalSerials(cmbProduct.SelectedValue, cmbPacket.Text)
+            txtTotalSerials.Text = iTotalSerials
+        End If
+    End Sub
+
+
+    Private Sub cmbPacket_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbPacket.SelectedIndexChanged
+        Try
+            If Me.cmbPacket.SelectedValue <> Nothing Then
+                txtBatchSize.Text = cmbPacket.Text
+                Dim iTotalSerials = GetTotalSerials(cmbProduct.SelectedValue, cmbPacket.Text)
+                txtTotalSerials.Text = iTotalSerials
+            End If
+        Catch ex As Exception
+
+        End Try
+    End Sub
+    Private Function GetTotalSerials(ByVal ProductCode As String, ByVal PacketSize As Integer) As Integer
+        Dim cmdText As String = System.String.Empty
+        cmdText = "Select count(*) from Serials where ProductCode='" & ProductCode & "' And PacketSize=" & PacketSize & " ;"
+        Dim TotalRecord As Integer = ExecuteQuery(cmdText, Execute.Scalar)
+        Return TotalRecord
+    End Function
+End Class

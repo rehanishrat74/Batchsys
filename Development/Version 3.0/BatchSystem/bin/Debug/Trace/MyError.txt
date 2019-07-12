@@ -1,0 +1,67 @@
+Error from .Net : , 22/07/2008 11:03:13 , System.Web.Services.Protocols.SoapException: Server did not recognize the value of HTTP Header SOAPAction: http://tempuri.org/tbs.infinishops.com/Service1/UploadSecurityCodes.
+   at System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   at System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   at System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   at System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+and source is :    at BatchSystem.Common.UpLoadSecurityCodes(String str) in D:\Projects\Batch System\Development\Version 3.0\BatchSystem\Common.vb:line 646
+   at BatchSystem.frmSerials1.btnUploadSerial_Click(Object sender, EventArgs e) in D:\Projects\Batch System\Development\Version 3.0\BatchSystem\frmSerials1.vb:line 480
+Error from .Net : , 22/07/2008 11:03:23 , System.Web.Services.Protocols.SoapException: Server did not recognize the value of HTTP Header SOAPAction: http://tempuri.org/tbs.infinishops.com/Service1/UploadSecurityCodes.
+   at System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   at System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   at System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   at System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+and source is :    at BatchSystem.Common.UpLoadSecurityCodes(String str) in D:\Projects\Batch System\Development\Version 3.0\BatchSystem\Common.vb:line 646
+   at BatchSystem.frmSerials1.btnUploadSerial_Click(Object sender, EventArgs e) in D:\Projects\Batch System\Development\Version 3.0\BatchSystem\frmSerials1.vb:line 480
+Error from .Net : , 22/07/2008 11:49:29 , System.Web.Services.Protocols.SoapException: Server did not recognize the value of HTTP Header SOAPAction: http://tempuri.org/tbs.infinishops.com/Service1/UploadSecurityCodes.
+   at System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   at System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   at System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   at System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+and source is :    at BatchSystem.Common.UpLoadSecurityCodes(String str) in D:\Projects\Batch System\Development\Version 3.0\BatchSystem\Common.vb:line 646
+   at BatchSystem.frmSerials1.btnUploadSerial_Click(Object sender, EventArgs e) in D:\Projects\Batch System\Development\Version 3.0\BatchSystem\frmSerials1.vb:line 480
+Error from .VB : , 26/09/2008 16:32:15 , Error opening port
+Error from .Net : LognForm , 8/28/2012 2:43:31 PM , The 'Microsoft.Jet.OLEDB.4.0' provider is not registered on the local machine.
+and source is :    at System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at BatchSystem.Common.ExecuteQuery(String cmdText, Execute type) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\Common.vb:line 83
+   at BatchSystem.frmLogin.Button1_Click_1(Object sender, EventArgs e) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\frmLogin.vb:line 94
+Error from .Net : LognForm , 8/28/2012 4:29:26 PM , The 'Microsoft.Jet.OLEDB.4.0' provider is not registered on the local machine.
+and source is :    at System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at BatchSystem.Common.ExecuteQuery(String cmdText, Execute type) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\Common.vb:line 83
+   at BatchSystem.frmLogin.Button1_Click_1(Object sender, EventArgs e) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\frmLogin.vb:line 94
+Error from .Net : , 8/28/2012 5:20:30 PM , Object reference not set to an instance of an object.
+and source is :    at BatchSystem.Common.GetSeedMinMax(Int16& SelectSeed) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\Common.vb:line 196
+   at BatchSystem.frmSerials1.GenrateSerial5(Random& random, String productID, Int32 packetSize, String Region, Int32 ProductPacketRegionID) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\frmSerials1.vb:line 163
+   at BatchSystem.frmSerials1.btnSerials_Click(Object sender, EventArgs e) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\frmSerials1.vb:line 489
+Error from .Net : , 02-Apr-13 7:05:56 PM , Index and length must refer to a location within the string.
+Parameter name: length
+and source is :    at System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at BatchSystem.frmSerials1.GenrateSerial5(Random& random, String productID, Int32 packetSize, String Region, Int32 ProductPacketRegionID) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\frmSerials1.vb:line 169
+   at BatchSystem.frmSerials1.btnSerials_Click(Object sender, EventArgs e) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\frmSerials1.vb:line 503
+Error from .Net : , 02-Apr-13 7:06:50 PM , Index and length must refer to a location within the string.
+Parameter name: length
+and source is :    at System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at BatchSystem.frmSerials1.GenrateSerial5(Random& random, String productID, Int32 packetSize, String Region, Int32 ProductPacketRegionID) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\frmSerials1.vb:line 169
+   at BatchSystem.frmSerials1.btnSerials_Click(Object sender, EventArgs e) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\frmSerials1.vb:line 503
+Error from .Net : , 02-Apr-13 7:08:41 PM , Index and length must refer to a location within the string.
+Parameter name: length
+and source is :    at System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at BatchSystem.frmSerials1.GenrateSerial5(Random& random, String productID, Int32 packetSize, String Region, Int32 ProductPacketRegionID) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\frmSerials1.vb:line 168
+   at BatchSystem.frmSerials1.btnSerials_Click(Object sender, EventArgs e) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\frmSerials1.vb:line 503
+Error from .Net : , 02-Apr-13 8:17:13 PM , Object reference not set to an instance of an object.
+and source is :    at BatchSystem.frmSerials1.GenrateSerial5(Random& random, String productID, Int32 packetSize, String Region, Int32 ProductPacketRegionID) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\frmSerials1.vb:line 168
+   at BatchSystem.frmSerials1.btnSerials_Click(Object sender, EventArgs e) in D:\Projects\GooglePaymentProcessor\Batch System\Development\Version 3.0\BatchSystem\frmSerials1.vb:line 506
